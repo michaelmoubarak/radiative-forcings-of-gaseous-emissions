@@ -1,1 +1,14 @@
 # Gaseous-emissions-forcings
+
+#This code is based on work being published in Moubarak, Michael, Rogers, Brendan, Sistla, Seeta, Potter, Stefano, Pfitsch, William, Ward, Daniel, and Natali, Susan. Carbon loss and radiative forcings of gaseous emissions from tundra wildfires in the Yukon-Kuskokwim River Delta.  Journal of Geophysical Research. (in prep).  Accompanying methods for this script will be published there and linked to this repository.  
+
+#The main script function is to calculate the radiative forcing of CO2, N2O, O3, CH4, direct and indirect aerosol effects, CO, NMVOCs, and NOx gaseous emissions depending on kilogams of dry organic matter combusted per meter squared.  Radiative forcings are reported as watts per meter squared. The main script has adjustable parameters.  First, the radiative forcing can be calculated based on three ambient gas concentration scenarios including, historic (ambient atmospheric gas concentrations remain constant after the combustion event), RCP4.5, and RCP8.5.  Analysis can be done with or without radiative forcings of gases with more uncertain lifetimes, including aerosol effects, NOx, CO, and NMVOCs.  Finally the year of and length of time (t) after the combustion event that are being analyzed. This script is specific to combustion of dry matter in boreal forests only in its emissions factors, which convert from dry organic matter combusted to mass of gaseous emission released, and global warming potentials (GWPs), which are calucalted regionaly for some gases with uncertain lifetimes.  Therefore, with modifications of these parameters, this script can be useful to model the radiative forcings of any combustion event or release of specified masses of gaseous emissions.  
+
+#Data files from outside sources are used for ambient concentrations of greenhouse gases under the aforementioned different emissions scenarios.  The data was taken from the following sources:
+
+#Meinshausen, M., S. J. Smith, K. V. Calvin, J. S. Daniel, M. L. T. Kainuma, J.-F. Lamarque, K. Matsumoto, S. A. Montzka, S. C. B. Raper, K. Riahi, A. M. Thomson, G. J. M. Velders and D. van Vuuren. (2011). The RCP Greenhouse Gas Concentrations and their Extension from 1765 to 2300. Climatic Change. 109: 213-241.
+
+#Joos, F., Roth, R., Fuglestvedt, J. S., Peters, G. P., Enting, I. G., von Bloh, W., Brovkin, V., Burke, E. J., Eby, M., Edwards, N. R., Friedrich, T., Frölicher, T. L., Halloran, P. R., Holden, P. B., Jones, C., Kleinen, T., Mackenzie, F. T., Matsumoto, K., Meinshausen, M., Plattner, G.-K., Reisinger, A., Segschneider, J., Shaffer, G., Steinacher, M., 	Strassmann, K., Tanaka, K., Timmermann, A., and Weaver, A. J. (2013). Carbon dioxide and climate impulse response functions for the computation of greenhouse gas metrics: a multi-model analysis. Atmospheric Chemistry and Physics, 13: 2793-2825.
+
+#NOAA GMD ftp server.  
+
